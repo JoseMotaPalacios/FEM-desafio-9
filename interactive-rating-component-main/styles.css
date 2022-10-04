@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 24%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.card-one__container, .card-two__container{
+    background-color: var(--Dark-Blue);
+    width: 328px;
+    margin: 155px auto;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.card-one__img-cont, .card-one__btn-cont__btn{
+    width: 40px;
+    height: 40px;
+    background-color: var(--Medium-Grey);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 15px;
+}
+
+.card-one__img{
+    width: 15px;
+}
+
+.card-one__title, .card-two__title{
+    color: var(--White);
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-one__text, .card-two__text{
+    color: var(--Light-Grey);
+    font-size: .94em;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+}
+
+.card-one__btn-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-one__btn-cont__btn{
+    border: 1px solid var(--Medium-Grey);
+    color: var(--Light-Grey);
+    font-weight: 700;
+    font-family: 'Overpass', sans-serif;
+}
+
+.card-one__btn-cont__btn:hover{
+    border: 1px solid var(--Light-Grey);
+    color: var(--White);
+    background-color: var(--Light-Grey);
+    cursor: pointer;
+}
+
+.card-one__btn-cont__btn:focus{
+    border: 1px solid var(--Orange);
+    color: var(--White);
+    background-color: var(--Orange);
+    cursor: pointer;
+}
+
+.card-one__submit{
+    width: 100%;
+    background-color: var(--Orange);
+    color: var(--White);
+    border-radius: 25px;
+    border: none;
+    height: 45px;
+    font-size: .9em;
+    font-weight: 700;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 2px;
+    margin: 15px auto 10px;
+}
+
+.card-one__submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.card-two__container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-two__img{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card-two__selection{
+    background-color: var(--Medium-Grey);
+    color: var(--Orange);
+    font-size: .9em;
+    width: 170px;
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 7.3px;
+    margin-bottom: 30px;
+}
+
+.card-two__text{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.attribution{
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%); }
